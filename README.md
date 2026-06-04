@@ -85,10 +85,10 @@ Base-stock inventory policy optimized using a Genetic Algorithm.
 The Genetic Algorithm determines optimal inventory multipliers by:
 
 - Population initialization
-- Tournament selection
 - Uniform crossover
 - Gaussian mutation
 - Profit-based fitness evaluation
+- Base-stock multiplier optimization (0.5–2.0 range)
 
 ---
 
@@ -127,6 +127,11 @@ Additional experiments evaluate the impact of increased demand variability on po
 | Profit Improvement | +1.14% |
 | Lost Sales | Reduced |
 | Robustness | Improved |
+
+## Key Insight
+
+The study found that while the GA-optimized policy statistically outperformed the retailer's existing fixed-order policy, the overall profit improvement remained modest. This suggests that simple heuristics can perform surprisingly well for stable demand environments. However, sensitivity analysis showed that as demand variability increases, optimization-based inventory policies become significantly more valuable, indicating stronger potential benefits for highly uncertain perishable products.
+
 
 ---
 
